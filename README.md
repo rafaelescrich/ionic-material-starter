@@ -18,10 +18,9 @@ You'll need to run 3 commands to get started:
 ### Adding Platforms
 You will still need to add platforms in the normal way. Using `ionic platform add <ios|android>`
 
-### Changes from the original base application
-
+##Changes from the original ionic-app-base
 #### Renamed lib to vendor
-Renaming `lib` to `vendor` was an idealogical change, in most robust application there will be an internal library that shares common code, particularly if you are building applications that include common feature sets. `Vendor` provides a more coherent relationship with external dependencies. 
+Renaming `lib` to `vendor` was an idealogical change, in most robust applications there will be an internal library that shares common code, particularly if you are building applications that include common feature sets. `Vendor` provides a more coherent relationship with external dependencies. 
 
 #### Added Sass bulk imports
 If you use any form of structured CSS methodology such as [BEM](https://en.bem.info/) or [SMACSS](https://smacss.com) you'll no doubt use several `.scss` files and folders. Including these files can become cumbersome and if you forget to update your imports you can run into a number of errors. 
