@@ -25,6 +25,9 @@ Renaming `lib` to `vendor` was an idealogical change, in most robust application
 #### Added Sass bulk imports
 If you use any form of structured CSS methodology such as [BEM](https://en.bem.info/) or [SMACSS](https://smacss.com) you'll no doubt use several `.scss` files and folders. Including these files can become cumbersome and if you forget to update your imports you can run into a number of errors. 
 
+#### Remove splash screen spinner
+Cordova applications show a loading spinner on the splash screen, we've added `<preference name="ShowSplashScreenSpinner" value="false"/>` to remove it by default.
+
 #### Included Compass into the `sass` block for gulp
 We like using [Compass](http://compass-style.org) it includes a wide range of helpful mixins and functions. 
 
