@@ -9,12 +9,13 @@ var rename = require('gulp-rename');
 var sh = require('shelljs');
 var bulkSass = require('gulp-sass-bulk-import');
 var wiredep = require('wiredep').stream;
+var templateCache = require('gulp-angular-templatecache');
 
 var paths = {
     sass: ['./scss/**/*.scss']
 };
 
-gulp.task('default', ['sass']);
+gulp.task('default', ['sass', 'templates', 'bower']);
 
 gulp.task('sass', function (done) {
     gulp.src('./scss/ionic.app.scss')
@@ -30,6 +31,14 @@ gulp.task('sass', function (done) {
         .pipe(rename({extname: '.min.css'}))
         .pipe(gulp.dest('./www/css/'))
         .on('end', done);
+});
+
+gulp.task('templates', function(){
+    return gulp.src('./www/views/**/*.html')
+        // Create entries within $templateCache
+        // Module uses ionic namespace as we can always guarantee it's existence within our application
+        .pipe(templateCache('templates.js',{module: 'ionic', root:'views/'}))
+        .pipe(gulp.dest('www/js'));
 });
 
 gulp.task('test', function () {
