@@ -62,6 +62,8 @@ gulp.task('autotest', function () {
     return gulp.watch(['./www/js/**/*.js', './tests/spec/*.js'], ['test']);
 });
 
+gulp.task('bump', require('gulp-cordova-bump'));
+
 gulp.task('watch', function () {
     gulp.watch(paths.sass, ['sass']);
 });
