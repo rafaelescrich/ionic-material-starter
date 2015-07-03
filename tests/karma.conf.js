@@ -11,25 +11,20 @@ module.exports = function (config) {
         autoWatch: true,
 
         // base path, that will be used to resolve files and exclude
-        basePath: '../',
+        basePath: './',
 
         // testing framework to use (jasmine/mocha/qunit/...)
         frameworks: ['jasmine'],
 
         // list of files / patterns to load in the browser
         files: [
-            'www/vendor/angular/angular.js',
-            'www/vendor/angular-mocks/angular-mocks.js',
-            'www/vendor/angular-animate/angular-animate.js',
-            'www/vendor/angular-sanitize/angular-sanitize.js',
-            'www/vendor/ionic/js/ionic.js',
-            'www/vendor/ionic/js/ionic-angular.js',
-            'www/vendor/angular-ui-router/release/angular-ui-router.js',
-            'www/vendor/ngCordova/dist/ng-cordova-mocks.min.js',
-            'www/js/**/*.js',
-            'www/views/**/*.html',
-            'tests/spec/**/*.js',
-            'tests/fixture/*.json'
+            // bower:js
+            // endbower
+            
+            '../www/js/**/*.js',
+            '../www/views/**/*.html',
+            '../tests/spec/**/*.js',
+            '../tests/fixture/*.json'
         ],
 
         // list of files / patterns to exclude
