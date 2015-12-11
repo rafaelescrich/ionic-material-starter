@@ -19,6 +19,15 @@ module.exports = function (config) {
         // list of files / patterns to load in the browser
         files: [
             // bower:js
+            '../www/vendor/angular/angular.js',
+            '../www/vendor/angular-animate/angular-animate.js',
+            '../www/vendor/angular-sanitize/angular-sanitize.js',
+            '../www/vendor/angular-ui-router/release/angular-ui-router.js',
+            '../www/vendor/ionic/release/js/ionic.js',
+            '../www/vendor/ionic/release/js/ionic-angular.js',
+            '../www/vendor/ngCordova/dist/ng-cordova.js',
+            '../www/vendor/ionic-material-design-lite/dist/js/ionic.material-design-lite.bundle.min.js',
+            '../www/vendor/angular-mocks/angular-mocks.js',
             // endbower
             
             '../www/js/**/*.js',
