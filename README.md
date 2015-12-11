@@ -1,7 +1,7 @@
-Ionic App Base
+Ionic Material Design Base Application
 =====================
 
-A starting project for Ionic that supports using custom SCSS with bulk file importing (globbing), Compass, wired dependencies using `wiredeps` so you don't have to include everything and Jasmine for scaffolding and running tests.
+A starting project for Ionic Material Design that supports using custom SCSS with bulk file importing (globbing), Compass, wired dependencies using `wiredeps` so you don't have to include everything and Jasmine for scaffolding and running tests.
 
 ## Using this project
 
@@ -14,6 +14,9 @@ You'll need to run 3 commands to get started:
 `bower install` - installs all application dependencies
 
 `ionic state restore` - installs Cordova Plugins setup by default
+
+### Working with Ionic Material Design 
+Read more here: https://github.com/delta98/ionic-material-design-lite
 
 ### Adding Platforms
 You will still need to add platforms in the normal way. Using `ionic platform add <ios|android>`
