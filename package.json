@@ -23,11 +23,11 @@
     "wiredep": "^2.2.2"
   },
   "cordovaPlugins": [
-    "org.apache.cordova.device",
-    "org.apache.cordova.console",
-    "com.ionic.keyboard",
-    "org.apache.cordova.splashscreen",
-    "org.apache.cordova.statusbar"
+    "cordova-plugin-device",
+    "cordova-plugin-console",
+    "ionic-plugin-keyboard",
+    "cordova-plugin-splashscreen",
+    "cordova-plugin-statusbar"
   ],
   "cordovaPlatforms": []
 }
