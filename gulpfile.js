@@ -62,7 +62,9 @@ gulp.task('autotest', function () {
     return gulp.watch(['./www/js/**/*.js', './tests/spec/*.js'], ['test']);
 });
 
-gulp.task('bump', require('gulp-cordova-bump'));
+gulp.task('bump', function () {
+   require('gulp-cordova-bump').run({autofiles: true});
+});
 
 gulp.task('watch', function () {
     gulp.watch(paths.sass, ['sass']);
@@ -74,7 +76,7 @@ gulp.task('bower', function () {
             exclude: "www/vendor/angular/angular.js"
         }))
         .pipe(gulp.dest('./www'));
-        
+
     gulp.src('./tests/karma.conf.js')
         .pipe(wiredep({
             devDependencies: true
