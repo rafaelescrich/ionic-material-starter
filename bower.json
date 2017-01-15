@@ -1,15 +1,13 @@
 {
-  "name": "HelloIonic",
+  "name": "Project X",
   "private": "true",
   "devDependencies": {
-    "angular-mocks": "~1.3.15"
+    "angular-mocks": "~1.3.15",
+    "ionic": "driftyco/ionic-bower#1.3.1"
   },
   "dependencies": {
-    "ionic": "driftyco/ionic-bower",
-    "ngCordova": "~0.1.15-alpha",
-    "ionic-material-design-lite": "~0.5.5"
-  },
-  "resolutions": {
-    "angular": "1.4.3"
+    "ionic-native": "^2.0.3",
+    "ionic-material-design-lite": "~0.5.5",
+    "angular-chart.js": "^1.1.1"
   }
 }

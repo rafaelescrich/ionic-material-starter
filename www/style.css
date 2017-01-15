@@ -1,0 +1,5 @@
+/* Put your css in here */
+
+.platform-android .has-header.has-tabs-top, .platform-android .has-tabs-top.has-header {
+  top: 127px;
+}
